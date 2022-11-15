@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>F:\project\ABP-MicroService\ABP-MicroService\MicroServices\Business\Business.Host\bin\Release</_PublishTargetUrl>
+    <History>True|2022-10-26T06:24:37.7025086Z;True|2022-10-26T08:59:53.4196812+08:00;</History>
+  </PropertyGroup>
+</Project>

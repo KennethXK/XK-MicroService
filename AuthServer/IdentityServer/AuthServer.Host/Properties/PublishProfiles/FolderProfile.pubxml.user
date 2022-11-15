@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>F:\project\ABP-MicroService\ABP-MicroService\AuthServer\IdentityServer\AuthServer.Host\bin\Release</_PublishTargetUrl>
+    <History>True|2022-10-26T06:04:52.2941811Z;True|2022-10-26T12:26:02.0880695+08:00;</History>
+  </PropertyGroup>
+</Project>

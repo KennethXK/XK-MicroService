@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Business</RootNamespace>
+    <Version>1.0.9</Version>
+    <Authors>XCZ</Authors>
+    <RepositoryUrl>https://github.com/WilliamXu96/ABP-MicroService</RepositoryUrl>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.Dashboard.BasicAuthorization" Version="1.0.2" />
+    <PackageReference Include="Hangfire.MySqlStorage" Version="2.0.3" />
+	 <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+    <PackageReference Include="Serilog.Sinks.Elasticsearch" Version="8.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.MultiTenancy" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.Caching" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.MySQL" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Business.Application\Business.Application.csproj" />
+    <ProjectReference Include="..\Business.EntityFrameworkCore\Business.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Business.HttpApi\Business.HttpApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataSeeder\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Dockerfile">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
